@@ -24,7 +24,7 @@ This assumes you have an existing back-end pagination approach, such as WordPres
 ```
 
 ```js
-var ScrollIn = require('load-more');
+var LoadMore = require('load-more');
 new LoadMore({
   container: '[data-load-more]',
   button: '[data-load-more-button]',
