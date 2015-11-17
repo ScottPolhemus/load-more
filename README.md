@@ -45,7 +45,7 @@ Selector for the element containing the list to be paginated.
 Type: `String`
 Default: `[data-load-more-button]`
 
-Selector for the "load more" button element. Should be present in the load-more container on all pages but the last.
+Selector for the load more button element. Should be present in the load-more container on all pages except the last one.
 
 ### link
 Type: `String`
@@ -55,6 +55,6 @@ Selector for the anchor element to the next page. This element's href will be us
 
 ### remove
 Type: `String`
-Default:
+Default: Values of `link` and `button`, e.g. `[data-load-more-link], [data-load-more-button]`
 
-Elements within the load more container that should be removed before adding new content (e.g. pagination & load more controls for the previous page).
+Selector for elements within the load more container that should be removed before adding new content (e.g. pagination & load more controls for the previous page).

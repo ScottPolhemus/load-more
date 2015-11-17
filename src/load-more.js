@@ -7,7 +7,7 @@ function LoadMore(opts) {
   this.containerSelector = opts.container || '[data-load-more]';
   this.buttonSelector = opts.button || '[data-load-more-button]';
   this.linkSelector = opts.link || '[data-load-more-link]';
-  this.removeSelector = opts.remove || this.linkSelector;
+  this.removeSelector = opts.remove || this.linkSelector+', '+this.buttonSelector;
 
   this.container = document.querySelector(this.containerSelector);
   this.container.setAttribute('data-load-more-active', '');
