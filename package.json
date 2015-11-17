@@ -1,0 +1,21 @@
+{
+  "name": "load-more",
+  "version": "0.0.1",
+  "description": "Simple AJAX enhancement for standard pagination (e.g. WordPress).",
+  "main": "src/load-more.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ScottPolhemus/load-more"
+  },
+  "author": "Scott Polhemus <scott@polhem.us>",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "gulp": "^3.9.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-util": "^3.0.7",
+    "minifyify": "^7.1.0",
+    "pretty-hrtime": "^1.0.1",
+    "watchify": "^3.6.1"
+  }
+}

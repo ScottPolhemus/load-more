@@ -1,0 +1,35 @@
+<!doctype html>
+<head>
+  <title>Scroll In Example</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="../src/load-more.js"></script>
+  <script>
+    window.onload = function() {
+      new LoadMore({
+        container: '[data-load-more]',
+        button: '[data-load-more-button]',
+        link: 'a.next-page',
+        remove: '.pagination, .load-more'
+      });
+    }
+  </script>
+</head>
+<body>
+  <h1>Load More Demo</h1>
+  <h2>Page 3</h2>
+  <div class="articles" data-load-more>
+    <article>Item #13</article>
+    <article>Item #14</article>
+    <article>Item #15</article>
+    <article>Item #16</article>
+    <article>Item #17</article>
+    <article>Item #18</article>
+    <div class="pagination">
+      <a class="prev-page" href="./page-2.html">Previous Page</a>
+      <a class="next-page" href="./page-4.html">Next Page</a>
+    </div>
+    <div class="load-more">
+      <button data-load-more-button>Load More</button>
+    </div>
+  </div>
+</body>

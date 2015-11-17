@@ -1,0 +1,26 @@
+body {
+  margin: 20px;
+}
+
+article {
+  font-size: 1.5em;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid black;
+}
+
+div.pagination {
+  display: block;
+}
+
+div.load-more {
+  display: none;
+}
+
+[data-load-more-active] div.pagination {
+  display: none;
+}
+
+[data-load-more-active] div.load-more {
+  display: block;
+}
