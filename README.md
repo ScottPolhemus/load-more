@@ -36,8 +36,8 @@ new LoadMore({
 ## Options
 
 ### container
-Type: 'String'
-Default: '[data-load-more]'
+Type: `String`
+Default: `[data-load-more]`
 
 Selector for the element containing the list to be paginated.
 
