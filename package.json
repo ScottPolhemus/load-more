@@ -1,6 +1,6 @@
 {
   "name": "load-more",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple AJAX enhancement for standard pagination (e.g. WordPress).",
   "main": "src/load-more.js",
   "repository": {
