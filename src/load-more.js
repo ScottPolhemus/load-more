@@ -8,6 +8,7 @@ function LoadMore(opts) {
   this.buttonSelector = opts.button || '[data-load-more-button]';
   this.linkSelector = opts.link || '[data-load-more-link]';
   this.removeSelector = opts.remove || this.linkSelector+', '+this.buttonSelector;
+  this.callback = opts.callback || null;
 
   this.container = document.querySelector(this.containerSelector);
   this.container.setAttribute('data-load-more-active', '');
@@ -68,6 +69,10 @@ LoadMore.prototype.handleResponse = function(responseText) {
 
   var container = responseDoc.querySelector(this.containerSelector);
   this.appendContent(container.innerHTML);
+
+  if(typeof this.callback === 'function') {
+    this.callback();
+  }
 }
 
 /**

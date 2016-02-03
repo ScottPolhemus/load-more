@@ -9,7 +9,10 @@
         container: '[data-load-more]',
         button: '[data-load-more-button]',
         link: 'a.next-page',
-        remove: '.pagination, .load-more'
+        remove: '.pagination, .load-more',
+        callback: function() {
+          console.log('More has been loaded.');
+        }
       });
     }
   </script>
