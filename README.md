@@ -58,3 +58,9 @@ Type: `String`
 Default: Values of `link` and `button`, e.g. `[data-load-more-link], [data-load-more-button]`
 
 Selector for elements within the load more container that should be removed before adding new content (e.g. pagination & load more controls for the previous page).
+
+### callback
+Type: `Function`
+Default: `null`
+
+Callback function to execute after the load more action has completed.
